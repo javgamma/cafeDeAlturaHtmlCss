@@ -1,0 +1,84 @@
+/* *{
+    margin: 0;
+ 
+} */
+body{
+    font-family: Outfit;
+    margin: 0;
+}
+
+
+nav{
+background-color: #2B2A2B;
+color: #FFFFFF;
+display: flex;
+height: 64px;
+align-items: center;
+justify-content: space-around;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+    width: 186px;
+    height: 36px;
+    gap:7.33px
+}
+#iconCoffee{
+    width: 20.53px;
+    height: 24.93px;
+}
+#logoNav{
+font-size: 23.46px;
+}
+
+
+.menuNav{
+    display: flex;
+    min-width: 512px;
+    height: 32px;
+    align-items: center;
+    
+} 
+.itemsListNav{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+   
+    
+}
+
+.contactAndLoginNav{
+    display: flex;
+    min-width: 288px;
+    height:40px;
+    gap: 24px;
+    align-items: center;
+}
+
+.contactNav{
+    display: flex;
+    align-items: center;
+    min-width: 134px;
+    font-size: 14px;
+    gap: 8px;
+
+}
+#iconPhone{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    
+}
+
+#buttonLoginNav{
+    background-color: #515051;
+    color: #FFFFFF;
+    font-family: Outfit;
+    height: 100%;
+    border-radius: 4px;
+    min-width: 130px;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 16px;
+}
