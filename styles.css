@@ -5,6 +5,7 @@
 body{
     font-family: Outfit;
     margin: 0;
+    width: 100%;
 }
 
 
@@ -81,4 +82,42 @@ font-size: 23.46px;
     gap: 8px;
     font-size: 14px;
     line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+}
+
+/*-------HERO-------*/
+
+
+.heroMain{
+    height: 486px;
+    background-color: aquamarine;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+.wrapperHeader{
+background-color: thistle;
+display: flex;
+justify-content: space-between;
+}
+
+.copyHeroleftSection{
+background-color: bisque;
+width: 588px;
+max-height: 232px;
+}
+
+.coffeeHarvest{
+width: 588px;
+height: 390px;
+border-radius: 20px;
+}
+
+.buttonDiscoverCtALeftSection{
+    
 }
