@@ -214,7 +214,7 @@ justify-content: center;
 }
 
 .cardItem{
-min-width: 316px;
+width: 316px;
 min-height: 232px;
 background-color:  #FFFFFF;
 border-radius: 8px;
@@ -223,6 +223,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
+padding: 24px;
 
 }
 
@@ -233,18 +234,18 @@ text-align: center;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    padding: 12px;
     
-
 }
 
-.iconsCard{
-    /* width: 40px;
-    height: 40px; */
+/* .iconsCard{
+    width: 40px;
+    height: 40px;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .subtitleCards{
