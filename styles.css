@@ -94,30 +94,92 @@ font-size: 23.46px;
 
 .heroMain{
     height: 486px;
-    background-color: aquamarine;
-    /* display: flex;
-    justify-content: center; */
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 
 .wrapperHeader{
-background-color: thistle;
+/* background-color: thistle; */
 display: flex;
-justify-content: space-between;
+justify-content: center;
+align-items: center;
+gap: 24px;
 }
 
 .copyHeroleftSection{
-background-color: bisque;
+/* background-color: bisque; */
 width: 588px;
 max-height: 232px;
+display: flex;
+flex-direction: column;
+}
+
+.copyHeroleftSection h3{
+font-size: 18px;
+line-height: 24px;
+color: #2A5B45;
+height: 24px;
+}
+
+.copyHeroleftSection h1{
+width: 588px;
+height: 88px;
+font-size: 40px;
+line-height: 44px;
+}
+
+.copyHeroleftSection p{
+    height: 32px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .coffeeHarvest{
+display: flex;
 width: 588px;
 height: 390px;
 border-radius: 20px;
 }
 
-.buttonDiscoverCtALeftSection{
+.containerButtonsLeftSectionHero{
+    width: 321px;
+    height: 40px;
+    display: flex;
+    gap: 16px;
     
+
 }
+
+#buttonDiscoverCtALeftSection{
+width: 168px;
+height: 40px;
+text-decoration: none;
+background: #1F1815;
+color: #FFFFFF;
+display:flex;
+align-items: center;
+justify-content:center;
+border-radius: 4px;
+
+
+}
+
+#buttonCtAbuyCoffeeLeftSection{
+    width:137px;
+    height: 40px;
+    text-decoration: none;
+    background: #2A5B45;
+    color: #FFFFFF;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 4px;
+}
+
+/*----------MAIN-------*/
+
