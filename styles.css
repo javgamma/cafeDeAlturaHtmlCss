@@ -183,3 +183,81 @@ border-radius: 4px;
 
 /*----------MAIN-------*/
 
+.wrapperCards{
+display: flex;
+background-image: url(/assets/img/cupCoffeeBgCard.png);
+width: 100%;
+height: 380px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#titleConditionsCard{
+    width: 350px;
+    height: 28px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex; 
+    justify-content: center;
+    color: #FFFFFF;
+}
+.containerCards{
+    width: 996px;
+    height: 232px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.cardItem{
+min-width: 316px;
+min-height: 232px;
+background-color:  #FFFFFF;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+
+.containerIconsCard{
+    min-width: 64px;
+    height: 64px;
+    background: #2A5B45;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+
+}
+
+.iconsCard{
+    /* width: 40px;
+    height: 40px; */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitleCards{
+width: 268px;
+height: 24px;
+font-size: 18px;
+line-height: 24px;
+font-weight: 600;
+}
+
+.textCard{
+    width: 268px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 16px;
+}
