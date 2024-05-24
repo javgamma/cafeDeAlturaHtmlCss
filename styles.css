@@ -1,6 +1,6 @@
 /* *{
     margin: 0;
- 
+
 } */
 body{
     font-family: Outfit;
@@ -39,14 +39,14 @@ font-size: 23.46px;
     min-width: 512px;
     height: 32px;
     align-items: center;
-    
-} 
+
+}
 .itemsListNav{
     display: flex;
     list-style: none;
     gap: 16px;
-   
-    
+
+
 }
 
 .contactAndLoginNav{
@@ -69,7 +69,7 @@ font-size: 23.46px;
     display: flex;
     width: 24px;
     height: 24px;
-    
+
 }
 
 #buttonLoginNav{
@@ -96,7 +96,7 @@ font-size: 23.46px;
     height: 486px;
     /* background-color: aquamarine; */
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -149,7 +149,7 @@ border-radius: 20px;
     height: 40px;
     display: flex;
     gap: 16px;
-    
+
 
 }
 
@@ -193,7 +193,7 @@ background-repeat: no-repeat;
 background-position: center;
 flex-direction: column;
 align-items: center;
-padding: 24px;
+/* padding: 24px; */
 /* justify-content: center; */
 }
 
@@ -202,11 +202,11 @@ padding: 24px;
     height: 28px;
     font-size: 24px;
     line-height: 28px;
-    display: flex; 
+    display: flex;
     justify-content: center;
     color: #FFFFFF;
     font-weight: 500;
-   
+
 }
 .containerCards{
     width: 996px;
@@ -214,7 +214,7 @@ padding: 24px;
     display: flex;
     gap: 24px;
     justify-content: center;
-   
+
 }
 
 .cardItem{
@@ -241,7 +241,7 @@ border: 1px solid #F7F5F3;
     justify-content: center;
     align-items: center;
     /* padding: 12px; */
-    
+
 }
 
 /* .iconsCard{
@@ -250,7 +250,7 @@ border: 1px solid #F7F5F3;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 */
 
@@ -274,22 +274,24 @@ border: 1px solid #F7F5F3;
 
 /*-------BOLSAS DE CAFE-------*/
 
-.section3Cafe{
+/* .section3Cafe{
     display: flex;
     background-color: #FFFFFF;
     width: 100vw;
     height: 603.39px;
     background-size: cover;
 
-    padding: 24px;
+     padding: 24px;
     text-align: center;
 
-    }
+    }  */
     .NewsSection{
          display: flex;
          flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 603.39px;
+
     }
 
 
@@ -297,8 +299,10 @@ border: 1px solid #F7F5F3;
     #titleNewsWrapper{
         width: 120px;
         height: 28px;
-        
-       
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2A5B45;
     }
 
     .containerNews{
@@ -311,19 +315,129 @@ border: 1px solid #F7F5F3;
 
     }
     .newCoffee{
-        height: 391.39px;
+        /* height: 391.39px; */
         width: 282px;
         border-radius: 8px;
         border: 1px solid #E3DED7;
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
+        align-items: center;
     }
 
     .containerLinksforAllCoffee{
         width: 101px;
         height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
     }
+    main .containerLinksforAllCoffee a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .descriptionProductNews{
+
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .textCardCoffee{
+
+        height: 16px;
+        display: flex;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+
+    /* FALTA EL HOVER */
+
+    .buttonAddBuyCoffee{
+        min-width: 60px;
+        height: 32px;
+        background: #2A5B45B2;
+        border-radius: 4px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 16px;
+        font-size: 14px;
+        color: #FFFFFF;
+
+    }
+
+
+/*  PREGUNTAS FRECUENTAS    */
+
+
+.frequentQuestionsSection{
+    background: #2A5B45;
+    height: 621px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 24px;
+    
+}
+
+
+.containerQuestions{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.frequentQuestionsSection p{
+    text-align: center;
+    width: 228px;
+    height: 28px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #FFFFFF;
+    
+}
+
+#questionOne{
+    display: flex;
+    width: 668px;
+    height: 134px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
+    
+}
+
+#questionTwo{
+    display: flex;
+    width: 668px;
+    height: 168px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+}
+#questionThree{
+    display: flex;
+    width: 668px;
+    height: 72px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
