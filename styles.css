@@ -212,7 +212,7 @@ padding: 24px;
     width: 996px;
     height: 232px;
     display: flex;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
    
 }
@@ -271,3 +271,59 @@ border: 1px solid #F7F5F3;
     font-size: 14px;
     line-height: 16px;
 }
+
+/*-------BOLSAS DE CAFE-------*/
+
+.section3Cafe{
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 603.39px;
+    background-size: cover;
+
+    padding: 24px;
+    text-align: center;
+
+    }
+    .NewsSection{
+         display: flex;
+         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #titleNewsWrapper{
+        width: 120px;
+        height: 28px;
+        
+       
+    }
+
+    .containerNews{
+        width: 1200px;
+        height: 391.39px;
+        gap: 24px;
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+
+    }
+    .newCoffee{
+        height: 391.39px;
+        width: 282px;
+        border-radius: 8px;
+        border: 1px solid #E3DED7;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .containerLinksforAllCoffee{
+        width: 101px;
+        height: 24px;
+    }
