@@ -554,3 +554,41 @@ justify-content: center;
     height: 390px;
     border-radius: 20px;
 }
+
+
+/*-------Seccion de Contacto----------*/
+
+
+.contactUsandForm{
+    height: 100%;
+height: 552px;
+background: #E3DED7;
+display: flex;
+justify-content: center;
+
+}
+.containerinfoContactAndForm{
+    width: 1200px;
+height: 552px;
+background-color: #2A5B45;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.leftQuarterContactUs{
+width: 558px;
+height: 320px;
+background-color: rgb(8, 105, 190);
+display: flex;
+
+
+}
+
+.rightQuarterForm{
+height:100%;
+background-color: cadetblue;
+width: 558px;
+
+
+}
