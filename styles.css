@@ -6,6 +6,7 @@ body{
     font-family: Outfit;
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -274,23 +275,13 @@ border: 1px solid #F7F5F3;
 
 /*-------BOLSAS DE CAFE-------*/
 
-/* .section3Cafe{
-    display: flex;
-    background-color: #FFFFFF;
-    width: 100vw;
-    height: 603.39px;
-    background-size: cover;
-
-     padding: 24px;
-    text-align: center;
-
-    }  */
-    .NewsSection{
+    .newsSection{
          display: flex;
          flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 603.39px;
+        gap: 40px;
 
     }
 
@@ -303,6 +294,7 @@ border: 1px solid #F7F5F3;
         font-size: 24px;
         line-height: 28px;
         color: #2A5B45;
+        margin: 0;
     }
 
     .containerNews{
@@ -311,7 +303,7 @@ border: 1px solid #F7F5F3;
         gap: 24px;
         display: flex;
         justify-content: center;
-        padding: 24px;
+        /* padding: 24px; */
 
     }
     .newCoffee{
@@ -324,21 +316,29 @@ border: 1px solid #F7F5F3;
         justify-content: center;
         text-align: center;
         align-items: center;
+        gap:12px;
+    }
+
+    .containerBagCoffee img{
+        height: 219.39px;
+
     }
 
     .containerLinksforAllCoffee{
-        width: 101px;
+       margin: 0;;
         height: 24px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:  center;
         gap: 16px;
 
     }
-    main .containerLinksforAllCoffee a{
+     .containerLinksforAllCoffee a{
         font-size: 14px;
         line-height: 16px;
     }
+
+
 
     .descriptionProductNews{
 
@@ -348,16 +348,12 @@ border: 1px solid #F7F5F3;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
     }
 
-    .textCardCoffee{
-
-        height: 16px;
+    .descriptionProductNews p{
+        margin: 0;
         display: flex;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
+        padding: 6px;
     }
 
 
@@ -375,11 +371,13 @@ border: 1px solid #F7F5F3;
         line-height: 16px;
         font-size: 14px;
         color: #FFFFFF;
+        margin-top: 8px;
+        gap: 8px;
 
     }
 
 
-/*  PREGUNTAS FRECUENTAS    */
+ /* PREGUNTAS FRECUENTAS    */
 
 
 .frequentQuestionsSection{
@@ -388,8 +386,10 @@ border: 1px solid #F7F5F3;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 24px;
-    
+
+    align-items: center;
+    flex-direction: column;
+
 }
 
 
@@ -400,10 +400,13 @@ border: 1px solid #F7F5F3;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    padding: 24px;
+    background-color: #E3DED7;
+    width: 668px;
 
 }
-
-.frequentQuestionsSection p{
+/*
+.frequentQuestionsSection #{
     text-align: center;
     width: 228px;
     height: 28px;
@@ -413,7 +416,9 @@ border: 1px solid #F7F5F3;
     justify-content: center;
     align-content: center;
     color: #FFFFFF;
-    
+    margin: 0;
+
+
 }
 
 #questionOne{
@@ -422,8 +427,8 @@ border: 1px solid #F7F5F3;
     height: 134px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    
-    
+
+
 }
 
 #questionTwo{
@@ -440,4 +445,112 @@ border: 1px solid #F7F5F3;
     height: 72px;
     background-color: #FFFFFF;
     border-radius: 10px;
+}
+
+.containerResolverDudas{
+    width: 178px;
+    height: 24px;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.containerResolverDudas a{
+    width: 138px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+} */
+
+/* .faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+} */
+
+
+
+/* ------------------------------------------------*/
+
+/*---Coffee Shop----*/
+
+.sectionCoffeeShop{
+    height: 480px;
+    background-color: #F7F5F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerCoffeShop{
+width: 1200px;
+height: 390px;
+top: 44.61px;
+left: 40px;
+display: flex;
+justify-content: space-between;
+background-color: aquamarine;
+align-items: center;
+}
+
+.containerCoffeShop .leftSection{
+width: 457px;
+height: 116px;
+background-color: antiquewhite
+}
+
+.containerCoffeShop .leftSection h2{
+    width: 340px;
+    height: 28px;
+    background-color: aqua;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #2A5B45;
+    margin: 0;
+}
+
+.containerCoffeShop .leftSection{
+width: 457px;
+height: 116px;
+background-color: antiquewhite;
+display: flex;
+gap: 16px;
+flex-direction: column;
+
+justify-content: center;
+}
+
+.containerCoffeShop .leftSection p{
+    background-color: #2A5B45;
+    width: 457px;
+    /* height: 32px; */
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+}
+.containerHowToGetThere{
+    background-color: aqua; 
+width: 118px;
+height: 24px;
+display: flex;
+align-items: center;
+gap: 16px;
+margin: 0;
+font-size: 14px;
+font-weight: 600;
+line-height: 16px;
+justify-content: center;
+}
+.containerHowToGetThere img{
+    width: 18px;
+    height: 18px;
+}
+
+#pictureCoffeeShop{
+    width: 588px;
+    height: 390px;
+    border-radius: 20px;
 }
