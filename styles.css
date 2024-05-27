@@ -574,26 +574,125 @@ justify-content: center;
 .containerinfoContactAndForm{
     width: 1200px;
 height: 552px;
-background-color: #2A5B45;
+/* background-color: #2A5B45; */
 display: flex;
 justify-content: space-between;
 align-items: center;
+opacity: 90%;
 
 }
 .leftQuarterContactUs{
 width: 558px;
 height: 320px;
-background-color: rgb(8, 105, 190);
+/* background-color: rgb(8, 105, 190); */
 display: flex;
-
+flex-direction: column;
+align-content: center;
+color: #6B7280;
+gap: 24px;
 
 }
+
+#titleHeaderContact{
+width: 588px;
+height: 24px;
+font-size: 18px;
+line-height: 24px;
+font-weight: 600;
+color: #111827;
+margin-top: 0;
+}
+
+.headerContactLeftQuarter p{
+font-size: 14px;
+width: 588px;
+height: 32px;
+line-height: 16px;
+/* background: #6B7280; */
+
+}
+
+.infoContactLeftQuarter{
+width: 588px;
+height: 24px;
+
+}
+
+.infoContactLeftQuarter p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.addressContact{
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+}
+
+.firstAddress{
+width: 141px;
+height: 16px;
+margin: 0;
+padding: 0;
+}
+
+
+.containerPhone{
+width: 588px;
+height: 60px;
+display: flex;
+flex-direction: column;
+}
+
+#infoPhone{
+    display: flex;
+    height: 24px;
+    width: 552px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 16px;
+    align-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+#infoEmail{
+    display: flex;
+    height: 24px;
+    width: 552px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 16px;
+    align-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.findJob{
+    margin-bottom: 0px;
+}
+
+
+
+
 
 .rightQuarterForm{
 height:100%;
 background-color: cadetblue;
 width: 558px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
