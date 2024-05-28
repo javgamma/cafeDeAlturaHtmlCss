@@ -1,16 +1,9 @@
-/* *{
-    margin: 0;
 
-} */
 body{
     font-family: Outfit;
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
-    /* display: flex;
-    flex-direction: column;
-    min-height: 100vh; */
-    
+    box-sizing: border-box;  
 }
 
 
@@ -50,8 +43,18 @@ font-size: 23.46px;
     display: flex;
     list-style: none;
     gap: 16px;
+    align-content: center;
+}
 
+.itemsListNav li{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px; 
+}
 
+.itemsListNav li:hover{
+    background-color: #515051;
 }
 
 .contactAndLoginNav{
@@ -107,7 +110,7 @@ font-size: 23.46px;
 
 
 .wrapperHeader{
-/* background-color: thistle; */
+background-color: thistle;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -120,6 +123,8 @@ width: 588px;
 max-height: 232px;
 display: flex;
 flex-direction: column;
+justify-items: center;
+gap: 16px;
 }
 
 .copyHeroleftSection h3{
@@ -127,6 +132,7 @@ font-size: 18px;
 line-height: 24px;
 color: #2A5B45;
 height: 24px;
+margin: 0;
 }
 
 .copyHeroleftSection h1{
@@ -134,12 +140,14 @@ width: 588px;
 height: 88px;
 font-size: 40px;
 line-height: 44px;
+margin: 0;
 }
 
 .copyHeroleftSection p{
     height: 32px;
     font-size: 14px;
     line-height: 16px;
+    margin: 0;
 }
 
 .coffeeHarvest{
@@ -191,15 +199,16 @@ border-radius: 4px;
 .wrapperCards{
 display: flex;
 background-image: url(/assets/img/cupCoffeeBgCard.png);
-width: 100vw;
 height: 380px;
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 flex-direction: column;
+margin: 0;
 align-items: center;
-/* padding: 24px; */
-/* justify-content: center; */
+justify-content: center;
+gap: 24px;
+align-content: center;
 }
 
 #titleConditionsCard{
@@ -209,8 +218,12 @@ align-items: center;
     line-height: 28px;
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     color: #FFFFFF;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
 
 }
 .containerCards{
@@ -219,33 +232,40 @@ align-items: center;
     display: flex;
     gap: 24px;
     justify-content: center;
+    margin: 0;
+    align-content: center;
+    align-items: center;
 
 }
 
 .cardItem{
 width:316px;
-min-height: 232px;
+height: 230px;
 background-color:  #FFFFFF;
 border-radius: 8px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+align-content: center;
 text-align: center;
-padding: 24px;
-border: 1px solid #F7F5F3;
 
+margin: 0;
+border: 1px solid #F7F5F3;
+box-shadow: 0px 1px 4px 0px #E3DED7CC;
+gap: 16px;
 }
 
 .containerIconsCard{
-    min-width: 64px;
+    width: 64px;
     height: 64px;
     background: #2A5B45;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    /* padding: 12px; */
+    
 
 }
 
@@ -267,12 +287,15 @@ border: 1px solid #F7F5F3;
     line-height: 24px;
     font-weight: 600;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 
 }
 
 .textCard{
     width: 268px;
-    height: 32px;
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     line-height: 16px;
 }
@@ -342,6 +365,10 @@ border: 1px solid #F7F5F3;
         line-height: 16px;
     }
 
+    .containerLinksforAllCoffee a:visited{
+        color: #1F1815
+    }
+
 
 
     .descriptionProductNews{
@@ -396,83 +423,118 @@ border: 1px solid #F7F5F3;
 
 }
 
-
-.containerQuestions{
+ #frequentlyAsksQuestion {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    padding: 24px;
-    background-color: #E3DED7;
-    width: 668px;
+    justify-content: center;
+    color: #ffffff;
+    min-height: 621px;
+    background: #2a5b45;
+    gap: 24px;
+  } 
 
-}
-/*
-.frequentQuestionsSection #{
-    text-align: center;
-    width: 228px;
-    height: 28px;
-    font-size: 24px;
-    line-height: 28px;
+  .imgFAQ{
+    width: 20px;
+    height: 20px;
+  }
+  
+  #FAQWrapper {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 16px;
+    color: black;
+    width: 668px;
+    min-height: 425px;
+  }
+  .titleChevron {
+    display: flex;
+    align-items: center;
+  }
+  .FAQ {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    color: #FFFFFF;
-    margin: 0;
-
-
-}
-
-#questionOne{
-    display: flex;
-    width: 668px;
-    height: 134px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-
-
-}
-
-#questionTwo{
-    display: flex;
-    width: 668px;
-    height: 168px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-
-}
-#questionThree{
-    display: flex;
+    align-items: center;
     width: 668px;
     height: 72px;
-    background-color: #FFFFFF;
+    background: #f7f5f3;
     border-radius: 10px;
-}
-
-.containerResolverDudas{
-    width: 178px;
-    height: 24px;
+    transition: height, 2s;
+  }
+  .FAQ h3 {
     display: flex;
+    width: 620px;
+    min-height: 24px;
+    justify-content: space-between;
+  }
+  
+  .FAQ hr {
+    opacity: 0%;
+    width: 0%;
+  }
+  .FAQ p {
+    display: none;
+    opacity: 0%;
+    font-size: 12px;
+    height: 0%;
+    
+  
+  }
+
+  
+
+
+  #questionOne:hover {
+    height: 136px;
+    /* gap: 16px; */
+  }
+
+
+  
+  #questionTwo:hover {
+    height: 168px;
+    /* gap: 16px; */
+    padding-bottom: 24px;
+  }
+  #questionThree:hover {
+    height: 168px;
+    /* margin: 0;
+    padding: 0; 
+    gap: 16px; */
+  }
+  
+  .FAQ:hover hr {
+    opacity: 100%;
+    width: 620px;
+  }
+  .FAQ:hover p {
+    display: flex;
+    opacity: 100%;
+    width: 620px;
+    height: 24px;
+  }
+  .imgFAQ {
+    transition: transform 1s;
+  }
+  .FAQ:hover .imgFAQ {
+    transform: rotate(180deg);
+  }
+  
+  #linkIconFAQ {
+    color: #ffffff;
+    display: flex;
+    text-decoration: underline;
+    align-items: center;
     gap: 16px;
-    padding: 16px;
-}
+  } 
 
-.containerResolverDudas a{
-    width: 138px;
-    height: 16px;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 600;
-    color: #FFFFFF;
-} */
-
-/* .faq-container {
-    max-width: 600px;
-    margin: 0 auto;
-} */
-
+  #linkIconFAQ a:visited{
+    color: #D1D5DB;
+  }
 
 
 /* ------------------------------------------------*/
@@ -495,20 +557,20 @@ top: 44.61px;
 left: 40px;
 display: flex;
 justify-content: space-between;
-background-color: aquamarine;
+/* background-color: aquamarine; */
 align-items: center;
 }
 
 .containerCoffeShop .leftSection{
 width: 457px;
 height: 116px;
-background-color: antiquewhite
+/* background-color: antiquewhite */
 }
 
 .containerCoffeShop .leftSection h2{
     width: 340px;
     height: 28px;
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -519,7 +581,7 @@ background-color: antiquewhite
 .containerCoffeShop .leftSection{
 width: 457px;
 height: 116px;
-background-color: antiquewhite;
+/* background-color: antiquewhite; */
 display: flex;
 gap: 16px;
 flex-direction: column;
@@ -528,7 +590,7 @@ justify-content: center;
 }
 
 .containerCoffeShop .leftSection p{
-    background-color: #2A5B45;
+    /* background-color: #2A5B45; */
     width: 457px;
     /* height: 32px; */
     font-size: 14px;
@@ -536,7 +598,7 @@ justify-content: center;
     margin: 0;
 }
 .containerHowToGetThere{
-    background-color: aqua; 
+    /* background-color: aqua;  */
 width: 118px;
 height: 24px;
 display: flex;
@@ -660,7 +722,7 @@ flex-direction: column;
 
 #infoEmail{
     display: flex;
-    height: 24px;
+    
     width: 552px;
     height: 24px;
     font-size: 14px;
@@ -675,22 +737,159 @@ flex-direction: column;
 }
 
 
-
-
-
 .rightQuarterForm{
-height:100%;
-background-color: cadetblue;
-width: 558px;
+height:552px;
+width: 588px;
+/* background-color: cadetblue; */
+display: flex;
+justify-content: center;
+align-items: center;
+color: #374151;
+background-color:#FFFFFF ;
+
+
+}
+
+.containerForm{
+width: 470px;
+height: 488px;
+display: flex;
+gap: 24px;
+flex-direction: column;
+background-color: white;
+justify-items: center;
+
+}
+.boxFullNameUser{
+display: flex;
+flex-direction: column;
+width: 470px;
+height: 54px;
+gap: 4px;
+}
+
+.fullnameUser{
+    width: 470px;
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+}
+
+form input{
+padding-left: 10px;
+}
+form input:focus, textarea:focus, select:focus{
+    border: 1px solid #2A5B45;
+    outline:none;
+}
+
+input[type="checkbox"]{
+     appearance:none;
+     width: 15px;
+            height: 15px;
+            background: #ccc;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 2px;
+}
+input[type="checkbox"]:checked{
+    background: #2A5B45;
+    padding: 2px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: white;
+    position: absolute;
+    
+}
+
+.boxEmailUser{
+display: flex;
+flex-direction: column;
+width: 470px;
+min-height: 54px;
+gap: 4px;
+}
+.emailUser{
+width: 470px;
+height: 34px;
+border-radius: 6px;
+border: 1px solid #D1D5DB;
+}
+
+.boxPhoneUser{
+    width: 470px;
+    height: 58px;
+}
+
+#containerPhoneAndText{
+    /* width: 470px;
+    height: 34px; */
+    border-radius: 6px;
+    /* border: 1px solid #D1D5DB; */
+    width: 470px;
+    display: flex;
+    align-items: center;
+}
+
+.codPhoneUser{
+    width: 68px;
+    height: 32px;
+    border-radius: 6px 0px 0px 6px;
+  text-align: center;
+  border: 1px solid #D1D5DB;
+  border-right: none;
+    
 }
 
 
+#phoneUserText{
+    width: 402px;
+    height: 28px;
+    border: 1px solid #D1D5DB;
+    border-left: none;
+}
 
+.containerTextArea{
+height: 142px;
+}
 
+#comments{
+width: 470px;
+min-height: 122px;
+font-family: Outfit;
+}
 
+#privacyAndTerms{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    }
 
+    #privacyAndTerms span{
+    font-weight: 600;
+    }
+   
 
-
+    #containerSubmit{
+    width:90px;
+    height:40px;
+    gap: 8px;
+    border-radius: 4px;
+    /* opacity: 0px; */
+    background-color: #2A5B45;
+    /* border: none; */
+    font-family: Outfit;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    }
+    
 
 
 
@@ -699,25 +898,40 @@ footer{
     height: 310px;
     background-color: #1F1815;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .wrapperFooter{
 width: 1200px;
+margin-top: 28.61px;
 height: 204px;
-background-color: #515051;
+background-color: #bcb6bc;
+gap: 16px;
 }
 
-.copyrightFooter{
+#copyrightFooter{
 width: 100%;
 height: 40px;
-background-color: blue;
+background-color: rgb(90, 90, 190);
+display: flex;
+justify-content: center;
 }
 
 .containerFooterInfo{
 display: flex;
 justify-content: space-evenly;
-
 }
+
+#logoFooterTitle{
+display: flex;
+align-items: center;
+gap: 7.33px;
+width: 186px;
+height: 36px;
+margin: 0;
+padding: 0;
+}
+

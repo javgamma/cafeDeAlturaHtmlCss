@@ -66,17 +66,16 @@
             <div class="containerCards">
                         <div class="cardItem" >
                             <div class="containerIconsCard">
-                            <img src="/assets/img/IllustrationiconLista.png" alt="">
+                            <img src="/assets/img/checkchecklist.png" alt="">
                             </div>
                             <h3 class="subtitleCards"> Recibe tu pedido sin preocuparte</h3>
-                            
                             <p class="textCard">Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás sin tu taza de la mañana. </p>
                             </div>
                         
 
                         <div class="cardItem">
                             <div class="containerIconsCard">
-                                <img src="/assets/img/camion.png" alt="">
+                                <img src="/assets/img/TruckIcono.png" alt="">
                             </div>
                             <h3 class="subtitleCards">Envío en 24/48h</h3>
                             <p class="textCard" >Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
@@ -85,7 +84,7 @@
 
                         <div class="cardItem">
                             <div class="containerIconsCard">
-                               <img src="/assets/img/regalo.png" alt="">
+                               <img src="/assets/img/regaloIcono.png" alt="">
                             </div>
                             <h3 class="subtitleCards"> Descuentos y beneficios</h3>
 
@@ -143,7 +142,7 @@
                     </div>
                 
                     <div class="containerLinksforAllCoffee" >
-                    <a>Ver todos </a>
+                    <a href="">Ver todos </a>
                     <img id="arrowIcon" src="/assets/img/iconFlecha.png" alt=" icono de flecha con direccion a la derecha">
                     </div>
                 </div>
@@ -183,24 +182,72 @@
 
 
         <section class="frequentQuestionsSection">
-            <div class="containerQuestions">
-            <details>
-                <div>
-                
-                <p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+            <div id="frequentlyAsksQuestion">
+                <h2>Preguntas frecuentes</h2>
+                <div id="FAQWrapper">
+                  <div class="FAQ" id="questionOne">
+                    <div class="titleChevron">
+                      <h3>¿Cómo hago el pedido?</h3>
+                      <img class="imgFAQ" src="assets/img/flechaArriba.png" alt="flecha en movimiento mientras despliega la información" />
+                    </div>
+                    <hr/>
+                    <p>
+                      Selecciona el café que desees probar y completa el proceso de
+                      compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te
+                      lo mandemos a casa y así nunca te quedarás sin café.
+                    </p>
+                  </div>
+          
+                  <div class="FAQ" id="questionTwo">
+                    <div class="titleChevron">
+                      <h3>¿Cómo hago el pedido?</h3>
+                      <img class="imgFAQ" src="assets/img/flechaArriba.png" alt="up" />
+                    </div>
+                    <hr />
+                    <p>
+                      Viajamos constantemente para encontrar los mejores granos y a los
+                      agricultores más exigentes. Si podemos ofrecerte estos precios es
+                      porque tratamos directamente con los productores de café, sin
+                      intermediarios. Así obtenemos el mejor precio para ti y la persona
+                      que está detrás de los granos de café recibe el mayor beneficio
+                      posible.
+                    </p>
+                  </div>
+          
+                  <div class="FAQ" id="questionThree">
+                    <div class="titleChevron">
+                      <h3>¿Es posible enviar café a mi oficina?</h3>
+                      <img class="imgFAQ" src="assets/img/flechaArriba.png" alt="down" />
+                    </div>
+                    <hr />
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nisi
+                      qui temporibus debitis eius magni? Debitis totam quidem minima nisi
+                      voluptatem similique tempora facilis aliquam dolorem. Corporis totam
+                      nostrum iusto!
+                    </p>
+                  </div>
                 </div>
-                
-            </details>
-            <details>
-                <summary>¿Por qué los precios son tan bajos?</summary>
-                <p></p>
-            </details>
-            <details>
-                <summary>¿Es posible enviar café a mi oficina?</summary>
-                <p></p>
-            </details>
-        </div>
+                <div id="linkIconFAQ">
+                  <a href="">Resolvemos tus dudas</a>
+                  <img
+                    src="assets/img/flechaDerechaFAQ.png"
+                    alt="flechaApuntandoDerecha "
+                  />
+                </div>
+              </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+        
 
         <div class="sectionCoffeeShop">
             <div class="containerCoffeShop">
@@ -259,15 +306,49 @@
             </div>
             
           </div>
-          <div class="rightQuarterForm"></div>
+          <div class="rightQuarterForm">
+          <form class="containerForm" action="">
+            <div class="boxFullNameUser">
+            <label for="fullnameUser">Nombre completo</label>
+            <input class="fullnameUser "id="fullnameUser" type="text">
+            </div>
+
+            <div class="boxEmailUser">
+            <label for="emailUser">Email</label>
+            <input class="emailUser" id="emailUser" type="email">
+            </div>
+
+            <div class="boxPhoneUser">
+            <label for="codPhoneUser">Telefono</label>
+            <div id="containerPhoneAndText">
+            <select class="codPhoneUser" id="codPhoneUser" name="codPhoneUser" type="tel">
+                <option value="+1">US</option>
+                <option value="+34">ES</option>
+                <option value="+58">VEN</option>
+
+            </select>
+
+            <input id="phoneUserText" type="text" placeholder="+1 (555)987-6543">
+            </div>
+            </div>
+
+            <div class="containerTextArea">
+            <label for="comments"></label>
+            <textarea name="comments" id="comments" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+
+            <div id="privacyAndTerms">
+            <input type="checkbox" name="" id="">
+            <label for=""> Acepto la <span><a href="">Politica de Privacidad</a> y los <a href=""> Términos y condiciones</a></span></label>
+            </div>
+
+
+            <input id="containerSubmit" type="submit" value="Enviar">
+            
+          </form>
+        </div>
 
         </div>
-      
-            
-
-
-                    
-            
 
     </main>
 
@@ -277,10 +358,17 @@
     <footer>
 
         <div class="wrapperFooter">
-            <div>cafedealtura.com</div>
+            <div id="logoFooterTitle">
+            <p id="logoFooter">cafedealtura.com</p>
+                <img id="iconCoffee"src="/assets/img/ps_coffee-hot.png" alt="">
+            </div>
+
+
             <div class="containerFooterInfo">
                 <div>
-                    <button></button>
+                    <a id="buttonTelFooter" href="" >
+                        Iniciar Sesión
+                    </a>
                     <button></button>
                 </div>
                 <div>
@@ -300,9 +388,9 @@
 
         </div>
         
-
+    <div id="copyrightFooter">Todos los derechos reservados-Café de Altura SL - 2002</div>
     </footer>
-    <div class="copyrightFooter"></div>
+   
     
 </body>
 </html>
