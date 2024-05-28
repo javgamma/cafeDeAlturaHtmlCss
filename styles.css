@@ -344,6 +344,7 @@ gap: 16px;
         text-align: center;
         align-items: center;
         gap:12px;
+        transition: background-color 0.5s;
     }
 
     .containerBagCoffee img{
@@ -381,6 +382,15 @@ gap: 16px;
         flex-direction: column;
     }
 
+    .newCoffee:hover{
+        background-color:  #f7f5f3
+    }
+    .newCoffee:hover .buttonAddBuyCoffee{
+        background-color: #2A5B45;
+    }
+
+
+
     .descriptionProductNews p{
         margin: 0;
         display: flex;
@@ -404,8 +414,12 @@ gap: 16px;
         color: #FFFFFF;
         margin-top: 8px;
         gap: 8px;
-
+        transition: background-color 0.5s;
     }
+
+
+
+
 
 
  /* PREGUNTAS FRECUENTAS    */
@@ -463,7 +477,7 @@ gap: 16px;
     height: 72px;
     background: #f7f5f3;
     border-radius: 10px;
-    transition: height, 2s;
+    transition: height,1s;
   }
   .FAQ h3 {
     display: flex;
@@ -734,20 +748,24 @@ flex-direction: column;
 
 .findJob{
     margin-bottom: 0px;
+    
+}
+
+.findJob a:visited{
+    color: #1F1815
 }
 
 
 .rightQuarterForm{
 height:552px;
 width: 588px;
-/* background-color: cadetblue; */
 display: flex;
 justify-content: center;
 align-items: center;
 color: #374151;
 background-color:#FFFFFF ;
-
-
+margin: 0;
+box-sizing: border-box;
 }
 
 .containerForm{
@@ -758,50 +776,56 @@ gap: 24px;
 flex-direction: column;
 background-color: white;
 justify-items: center;
+box-sizing: border-box;
+margin: 0;
+/* border: 1px solid red; */
 
 }
+
 .boxFullNameUser{
 display: flex;
 flex-direction: column;
-width: 470px;
+max-width: 100%;
 height: 54px;
 gap: 4px;
+box-sizing: border-box;
+/* border: 1px solid blue; */
 }
+
+
 
 .fullnameUser{
     width: 470px;
     height: 34px;
     border-radius: 6px;
     border: 1px solid #D1D5DB;
+    box-sizing: border-box;
+
 }
 
 form input{
-padding-left: 10px;
+/* padding-left: 10px; */
 }
+
 form input:focus, textarea:focus, select:focus{
-    border: 1px solid #2A5B45;
+    border: 2px solid #2A5B45;
     outline:none;
 }
 
-input[type="checkbox"]{
-     appearance:none;
-     width: 15px;
-            height: 15px;
-            background: #ccc;
-            border-radius: 2px;
-            cursor: pointer;
-            padding: 2px;
-}
-input[type="checkbox"]:checked{
-    background: #2A5B45;
-    padding: 2px;
+form input:hover, textarea:hover, select:hover{
+    /* border: 1px solid #9B9EA3; */
+    box-shadow: 0px 1px 2px 0px #0000000D;
+
 }
 
-input[type="checkbox"]:checked::before {
-    content: '✔';
-    color: white;
-    position: absolute;
-    
+
+input[type="checkbox"] {
+    accent-color: #2A5B45;
+}
+
+::placeholder{
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .boxEmailUser{
@@ -810,12 +834,15 @@ flex-direction: column;
 width: 470px;
 min-height: 54px;
 gap: 4px;
+box-sizing: border-box;
+box-shadow: 0px 1px 2px 0px #0000000D;
 }
 .emailUser{
 width: 470px;
 height: 34px;
 border-radius: 6px;
 border: 1px solid #D1D5DB;
+box-sizing: border-box;
 }
 
 .boxPhoneUser{
@@ -824,41 +851,70 @@ border: 1px solid #D1D5DB;
 }
 
 #containerPhoneAndText{
-    /* width: 470px;
-    height: 34px; */
-    border-radius: 6px;
-    /* border: 1px solid #D1D5DB; */
     width: 470px;
+    height: 34px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    margin: 0;
+    padding: 0;
 }
+
+#containerPhoneAndText:focus-within{
+    border: 1.5px solid #2A5B45;
+}
+
+#containerPhoneAndText input{
+    outline: none;
+    border: 0px;
+}
+#containerPhoneAndText select{
+outline: none;
+border: 0px;
+}
+
 
 .codPhoneUser{
     width: 68px;
     height: 32px;
     border-radius: 6px 0px 0px 6px;
   text-align: center;
-  border: 1px solid #D1D5DB;
+  /* border: 1px solid #D1D5DB; */
   border-right: none;
     
 }
 
-
 #phoneUserText{
     width: 402px;
     height: 28px;
-    border: 1px solid #D1D5DB;
+    /* border: 1px solid #D1D5DB; */
     border-left: none;
 }
 
 .containerTextArea{
 height: 142px;
+border-radius: 6px;
+}
+
+
+#containerSubmit{
+border: none;
+}
+
+#containerSubmit:hover{
+cursor: pointer;
 }
 
 #comments{
 width: 470px;
 min-height: 122px;
 font-family: Outfit;
+border-radius: 6px;
+border: 1px solid #D1D5DB;
+box-shadow: 0px 1px 2px 0px #0000000D;
 }
 
 #privacyAndTerms{
@@ -901,6 +957,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
     
 }
 
@@ -910,6 +967,8 @@ margin-top: 28.61px;
 height: 204px;
 background-color: #bcb6bc;
 gap: 16px;
+
+
 }
 
 #copyrightFooter{
@@ -922,7 +981,11 @@ justify-content: center;
 
 .containerFooterInfo{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
+width: 1132px;
+height: 152px;
+
+background-color: yellow;
 }
 
 #logoFooterTitle{
@@ -931,7 +994,92 @@ align-items: center;
 gap: 7.33px;
 width: 186px;
 height: 36px;
+line-height: 35.19px;
+font-weight: 400;
 margin: 0;
 padding: 0;
 }
 
+#containerHelpFooter{
+    width: 255.33px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+#containerHelpFooter p{
+    width: 131px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+#containerPhone{
+background: #515051;
+width: 182px;
+height: 48px;
+display: flex;
+gap: 8px;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+border-radius: 4px;
+}
+#containerPhone img{
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    display: flex;
+}
+#containerPhone p{
+font-size: 14px;
+font-weight: 600;
+line-height: 16px;
+text-align: left;
+margin: 0;
+display: flex;
+}
+
+#containerMailFooter{
+background: #515051;
+width: 232px;
+height: 48px;
+display: flex;
+gap: 8px;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+border-radius: 4px;
+}
+
+#containerListFooter{
+width: 96px;
+height: 144px;
+/* top: 2.61px; */
+/* left: 577px; */
+gap: 16px;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+}
+
+#containerListFooter li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+#PoliticaPriv{
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+}
