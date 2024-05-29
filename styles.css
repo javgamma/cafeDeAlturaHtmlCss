@@ -3,7 +3,7 @@ body{
     font-family: Outfit;
     margin: 0;
     width: 100%;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 
@@ -120,6 +120,7 @@ font-size: 23.46px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 64px;
 }
 
 
