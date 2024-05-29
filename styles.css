@@ -14,6 +14,9 @@ display: flex;
 height: 64px;
 align-items: center;
 justify-content: space-around;
+width: 100%;
+position: fixed;
+z-index: 1000;
 }
 
 .containerLogo{
@@ -23,6 +26,16 @@ justify-content: space-around;
     height: 36px;
     gap:7.33px
 }
+
+.containerLogo a{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.containerLogo:hover{
+    cursor: pointer;
+}
+
 #iconCoffee{
     width: 20.53px;
     height: 24.93px;
@@ -55,6 +68,7 @@ font-size: 23.46px;
 
 .itemsListNav li:hover{
     background-color: #515051;
+    cursor: pointer;
 }
 
 .contactAndLoginNav{
@@ -110,7 +124,7 @@ font-size: 23.46px;
 
 
 .wrapperHeader{
-background-color: thistle;
+/* background-color: thistle; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -640,11 +654,13 @@ justify-content: center;
 
 
 .contactUsandForm{
-    height: 100%;
+height: 100%;
 height: 552px;
 background: #E3DED7;
 display: flex;
 justify-content: center;
+margin: 0;
+padding: 0;
 
 }
 .containerinfoContactAndForm{
@@ -664,6 +680,7 @@ height: 320px;
 display: flex;
 flex-direction: column;
 align-content: center;
+justify-content: center;
 color: #6B7280;
 gap: 24px;
 
@@ -676,14 +693,24 @@ font-size: 18px;
 line-height: 24px;
 font-weight: 600;
 color: #111827;
-margin-top: 0;
+margin: 0;
+display: flex;
 }
 
+
+
+.headerContactLeftQuarter{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 .headerContactLeftQuarter p{
 font-size: 14px;
 width: 588px;
 height: 32px;
 line-height: 16px;
+margin: 0;
+padding: 0;
 /* background: #6B7280; */
 
 }
@@ -691,6 +718,9 @@ line-height: 16px;
 .infoContactLeftQuarter{
 width: 588px;
 height: 24px;
+display: flex;
+margin: 0;
+padding: 0;
 
 }
 
@@ -698,19 +728,33 @@ height: 24px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-}
-.addressContact{
-margin: 0;
+    display: flex;
+    margin: 0;
 padding: 0;
-display: flex;
-flex-direction: column;
+gap: 12px;
 }
 
-.firstAddress{
-width: 141px;
+.containerPhoneandMail{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.addressContact{
+/* margin: 0;
+padding: 0; */
+display: flex;
+flex-direction: column;
+width: 100%;
 height: 16px;
+gap: 12px;
+}
+
+#firstAddress{
+display: flex;
 margin: 0;
 padding: 0;
+gap: 12px;
 }
 
 
@@ -766,6 +810,7 @@ color: #374151;
 background-color:#FFFFFF ;
 margin: 0;
 box-sizing: border-box;
+flex-direction: column;
 }
 
 .containerForm{
@@ -785,10 +830,11 @@ margin: 0;
 .boxFullNameUser{
 display: flex;
 flex-direction: column;
-max-width: 100%;
-height: 54px;
+width: 470px;
+min-height: 54px;
 gap: 4px;
 box-sizing: border-box;
+box-shadow: 0px 1px 2px 0px #0000000D;
 /* border: 1px solid blue; */
 }
 
@@ -800,21 +846,23 @@ box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid #D1D5DB;
     box-sizing: border-box;
-
+    padding-left: 10px;
+    display: flex;
 }
 
 form input{
 /* padding-left: 10px; */
 }
 
-form input:focus, textarea:focus, select:focus{
+form input:focus, #comments:focus, select:focus{
     border: 2px solid #2A5B45;
     outline:none;
 }
 
-form input:hover, textarea:hover, select:hover{
+form input:hover, #comments:hover, select:hover{
     /* border: 1px solid #9B9EA3; */
     box-shadow: 0px 1px 2px 0px #0000000D;
+    cursor: pointer;
 
 }
 
@@ -837,12 +885,14 @@ gap: 4px;
 box-sizing: border-box;
 box-shadow: 0px 1px 2px 0px #0000000D;
 }
+
 .emailUser{
 width: 470px;
 height: 34px;
 border-radius: 6px;
 border: 1px solid #D1D5DB;
 box-sizing: border-box;
+padding-left: 10px;
 }
 
 .boxPhoneUser{
@@ -892,6 +942,9 @@ border: 0px;
     height: 28px;
     /* border: 1px solid #D1D5DB; */
     border-left: none;
+
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .containerTextArea{
@@ -915,6 +968,7 @@ font-family: Outfit;
 border-radius: 6px;
 border: 1px solid #D1D5DB;
 box-shadow: 0px 1px 2px 0px #0000000D;
+box-sizing: border-box;
 }
 
 #privacyAndTerms{
@@ -927,7 +981,10 @@ box-shadow: 0px 1px 2px 0px #0000000D;
     }
 
     #privacyAndTerms span{
-    font-weight: 600;
+        font-weight: 600;
+    }
+    #privacyAndTerms span a:visited{
+        color: #374151;
     }
    
 
@@ -958,26 +1015,23 @@ footer{
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    color: #FFFFFF;
+    
     
 }
 
 .wrapperFooter{
-width: 1200px;
-margin-top: 28.61px;
-height: 204px;
-background-color: #bcb6bc;
-gap: 16px;
-
-
+    display: flex;
+    width: 1200px;
+    margin-top: 28.61px;
+    height: 204px;
+    /* background-color: #bcb6bc; */
+    gap: 16px;
+    flex-direction: column;
+    
+    
 }
 
-#copyrightFooter{
-width: 100%;
-height: 40px;
-background-color: rgb(90, 90, 190);
-display: flex;
-justify-content: center;
-}
 
 .containerFooterInfo{
 display: flex;
@@ -985,7 +1039,8 @@ justify-content: space-between;
 width: 1132px;
 height: 152px;
 
-background-color: yellow;
+/* background-color: yellow; */
+position: relative;
 }
 
 #logoFooterTitle{
@@ -998,6 +1053,15 @@ line-height: 35.19px;
 font-weight: 400;
 margin: 0;
 padding: 0;
+font-size: 23.46px;
+font-weight: 400;
+line-height: 35.19px;
+text-align: left;
+
+}
+
+#logoFooterTitle:hover{
+    cursor: pointer;
 }
 
 #containerHelpFooter{
@@ -1017,6 +1081,14 @@ padding: 0;
     line-height: 24px;
     margin: 0;
 }
+#containerHelpFooter a{
+    text-decoration: none;
+}
+
+#containerHelpFooter a:visited{
+    color: #FFFFFF;
+}
+
 #containerPhone{
 background: #515051;
 width: 182px;
@@ -1059,12 +1131,14 @@ border-radius: 4px;
 width: 96px;
 height: 144px;
 /* top: 2.61px; */
-/* left: 577px; */
+left: 577px;
 gap: 16px;
 margin: 0;
 padding: 0;
 display: flex;
 flex-direction: column;
+position: absolute;
+text-decoration: none;
 }
 
 #containerListFooter li{
@@ -1077,9 +1151,49 @@ flex-direction: column;
     font-weight: 600;
     line-height: 16px;
 }
+#containerListFooter a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
-#PoliticaPriv{
+#containerListFooter li:hover{
+    cursor: pointer;
+}
+
+#privacyPolicy{
     display: flex;
     flex-direction: column;
-    padding-right: 150px;
+    /* padding-right: 150px; */
+    position: absolute;
+    left: 800px;
+    width: 255.33px;
+    height: 80px;
+    top: 3px;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
+
+#privacyPolicy a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#privacyPolicy a:hover{
+    cursor: pointer;
+}
+
+
+#copyrightFooter{
+    width: 100%;
+    height: 40px;
+    /* background-color: rgb(90, 90, 190); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
