@@ -63,7 +63,7 @@ font-size: 23.46px;
     height: 32px;
     display: flex;
     align-items: center;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 .itemsListNav li:hover{
@@ -280,7 +280,7 @@ gap: 16px;
     justify-content: center;
     align-content: center;
     align-items: center;
-    
+
 
 }
 
@@ -461,13 +461,13 @@ gap: 16px;
     min-height: 621px;
     background: #2a5b45;
     gap: 24px;
-  } 
+  }
 
   .imgFAQ{
     width: 20px;
     height: 20px;
   }
-  
+
   #FAQWrapper {
     display: flex;
     flex-direction: column;
@@ -478,92 +478,96 @@ gap: 16px;
     width: 668px;
     min-height: 425px;
   }
-  .titleChevron {
-    display: flex;
-    align-items: center;
-  }
-  .FAQ {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 668px;
-    height: 72px;
-    background: #f7f5f3;
-    border-radius: 10px;
-    transition: height,1s;
-  }
-  .FAQ h3 {
-    display: flex;
+  
+.itemQuestion{
+height:72px;
+border: 1px solid black;
+gap: 16px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-content: center;
+box-sizing: border-box;
+background-color: #FFFFFF;
+overflow: hidden;
+
+transition: height 700ms ease;
+
+}
+
+
+.containerH3{
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+width: 668px;
+height: 72px;
+margin: 0;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+.secondBox{
     width: 620px;
-    min-height: 24px;
-    justify-content: space-between;
-  }
-  
-  .FAQ hr {
-    opacity: 0%;
-    width: 0%;
-  }
-  .FAQ p {
-    display: none;
-    opacity: 0%;
-    font-size: 12px;
-    height: 0%;
-    
-  
-  }
+    height: 32px;
+    gap: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+/*
+    overflow: hidden; */
+    /* max-height: 0; */
+    transition: max-height 0.5s ease;
+}
+.secondBox p{
+font-family: Outfit;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
 
-  
+}
+     .secondCaja hr{
+        display: flex;
 
+        margin: 0;
+        padding: 0;
+    }
+     
 
-  #questionOne:hover {
-    height: 136px;
-    /* gap: 16px; */
-  }
+.itemQuestion:hover{
+    height: 200px;
+}
 
+ .itemQuestion img {
+transition: transform 1s ease-in-out;    
+} 
 
-  
-  #questionTwo:hover {
-    height: 168px;
-    /* gap: 16px; */
-    padding-bottom: 24px;
-  }
-  #questionThree:hover {
-    height: 168px;
-    /* margin: 0;
-    padding: 0; 
-    gap: 16px; */
-  }
-  
-  .FAQ:hover hr {
-    opacity: 100%;
-    width: 620px;
-  }
-  .FAQ:hover p {
-    display: flex;
-    opacity: 100%;
-    width: 620px;
-    height: 24px;
-  }
-  .imgFAQ {
-    transition: transform 1s;
-  }
-  .FAQ:hover .imgFAQ {
+.itemQuestion:hover img{
     transform: rotate(180deg);
-  }
-  
+    transition: transform 1s ease;
+}
+
+/* --------------HOVER- -------------------------------------*/
+ 
+
   #linkIconFAQ {
     color: #ffffff;
     display: flex;
     text-decoration: underline;
     align-items: center;
     gap: 16px;
-  } 
+  }
 
   #linkIconFAQ a:visited{
     color: #D1D5DB;
-  }
+  } 
 
 
 /* ------------------------------------------------*/
@@ -781,7 +785,7 @@ flex-direction: column;
 
 #infoEmail{
     display: flex;
-    
+
     width: 552px;
     height: 24px;
     font-size: 14px;
@@ -793,7 +797,7 @@ flex-direction: column;
 
 .findJob{
     margin-bottom: 0px;
-    
+
 }
 
 .findJob a:visited{
@@ -912,9 +916,11 @@ padding-left: 10px;
     box-shadow: 0px 1px 2px 0px #0000000D;
     margin: 0;
     padding: 0;
+    
 }
 
 #containerPhoneAndText:focus-within{
+    outline: none;
     border: 1.5px solid #2A5B45;
 }
 
@@ -924,6 +930,7 @@ padding-left: 10px;
 }
 #containerPhoneAndText select{
 outline: none;
+height:30px ;
 border: 0px;
 }
 
@@ -935,7 +942,7 @@ border: 0px;
   text-align: center;
   /* border: 1px solid #D1D5DB; */
   border-right: none;
-    
+
 }
 
 #phoneUserText{
@@ -987,7 +994,7 @@ box-sizing: border-box;
     #privacyAndTerms span a:visited{
         color: #374151;
     }
-   
+
 
     #containerSubmit{
     width:90px;
@@ -1003,7 +1010,7 @@ box-sizing: border-box;
     font-weight: 600;
     color: #FFFFFF;
     }
-    
+
 
 
 
@@ -1017,8 +1024,8 @@ footer{
     flex-direction: column;
     box-sizing: border-box;
     color: #FFFFFF;
-    
-    
+
+
 }
 
 .wrapperFooter{
@@ -1029,8 +1036,8 @@ footer{
     /* background-color: #bcb6bc; */
     gap: 16px;
     flex-direction: column;
-    
-    
+
+
 }
 
 
@@ -1177,7 +1184,7 @@ text-decoration: none;
     text-decoration: none;
     list-style: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 #privacyPolicy a{
