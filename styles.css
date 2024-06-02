@@ -116,7 +116,6 @@ font-size: 23.46px;
 
 .heroMain{
     height: 486px;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +124,6 @@ font-size: 23.46px;
 
 
 .wrapperHeader{
-/* background-color: thistle; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -133,7 +131,6 @@ gap: 24px;
 }
 
 .copyHeroleftSection{
-/* background-color: bisque; */
 width: 588px;
 max-height: 232px;
 display: flex;
@@ -284,15 +281,6 @@ gap: 16px;
 
 }
 
-/* .iconsCard{
-    width: 40px;
-    height: 40px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
 
 .subtitleCards{
     width: 316px;
@@ -345,11 +333,11 @@ gap: 16px;
         gap: 24px;
         display: flex;
         justify-content: center;
-        /* padding: 24px; */
+       
 
     }
     .newCoffee{
-        /* height: 391.39px; */
+        
         width: 282px;
         border-radius: 8px;
         border: 1px solid #E3DED7;
@@ -413,8 +401,6 @@ gap: 16px;
     }
 
 
-    /* FALTA EL HOVER */
-
     .buttonAddBuyCoffee{
         min-width: 60px;
         height: 32px;
@@ -431,12 +417,6 @@ gap: 16px;
         gap: 8px;
         transition: background-color 0.5s;
     }
-
-
-
-
-
-
  /* PREGUNTAS FRECUENTAS    */
 
 
@@ -449,19 +429,32 @@ gap: 16px;
 
     align-items: center;
     flex-direction: column;
-
+    padding: 24px;
+    box-sizing: border-box;
 }
 
- #frequentlyAsksQuestion {
+#frequentlyAsksQuestion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    min-height: 621px;
+    height: 621px;
     background: #2a5b45;
-    gap: 24px;
+    box-sizing: border-box;
+ 
   }
+
+#titleFAQ{
+font-family: Outfit;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+color: #FFFFFF;
+margin: 0;
+display: flex;
+padding-bottom: 24px;
+}
 
   .imgFAQ{
     width: 20px;
@@ -471,12 +464,22 @@ gap: 16px;
   #FAQWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center; */
     gap: 16px;
     color: black;
     width: 668px;
-    min-height: 425px;
+    height: 425px;
+    box-sizing: border-box;
+  }
+
+  #containerAllItemsFAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:24px; */
+    gap: 24px;
+    box-sizing: border-box;
   }
   
 .itemQuestion{
@@ -488,11 +491,11 @@ display: flex;
 flex-direction: column;
 align-content: center;
 box-sizing: border-box;
-background-color: #FFFFFF;
+background-color: #ffffff;
 overflow: hidden;
-
 transition: height 700ms ease;
-
+padding: 24px;
+align-items:center ;
 }
 
 
@@ -501,12 +504,9 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 box-sizing: border-box;
-width: 668px;
-height: 72px;
+width: 620px;
+height: 24px;
 margin: 0;
-padding-left: 20px;
-padding-right: 20px;
-
 }
 .secondBox{
     width: 620px;
@@ -520,9 +520,7 @@ padding-right: 20px;
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
-/*
-    overflow: hidden; */
-    /* max-height: 0; */
+
     transition: max-height 0.5s ease;
 }
 .secondBox p{
@@ -531,19 +529,31 @@ font-size: 12px;
 font-weight: 400;
 line-height: 16px;
 text-align: left;
-
 }
-     .secondCaja hr{
-        display: flex;
-
-        margin: 0;
-        padding: 0;
-    }
-     
 
 .itemQuestion:hover{
-    height: 200px;
+    
+    background-color: #F7F5F3;
 }
+
+.itemQuestion #itemOne, #itemTwo, #itemThree {
+transition: height 1s ease;
+}
+
+#itemOne:hover{
+    height: 136px;
+}
+#itemTwo:hover{
+    height: 168px;
+}
+#itemThree:hover{
+    height: 136px;
+}
+
+.itemQuestion:hover .secondBox{
+    border-top: 1px solid #E3DED7
+}
+
 
  .itemQuestion img {
 transition: transform 1s ease-in-out;    
@@ -563,6 +573,24 @@ transition: transform 1s ease-in-out;
     text-decoration: underline;
     align-items: center;
     gap: 16px;
+    box-sizing: border-box;
+
+    width: 178px;
+    height: 24px;
+  
+  }
+  #linkIconFAQ a{
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 0;
+    width: 138px;
+    height: 16px;
+  }
+  #linkIconFAQ img{
+    width: 24px;
+    height: 24px;
   }
 
   #linkIconFAQ a:visited{
@@ -590,20 +618,17 @@ top: 44.61px;
 left: 40px;
 display: flex;
 justify-content: space-between;
-/* background-color: aquamarine; */
 align-items: center;
 }
 
 .containerCoffeShop .leftSection{
 width: 457px;
 height: 116px;
-/* background-color: antiquewhite */
 }
 
 .containerCoffeShop .leftSection h2{
     width: 340px;
     height: 28px;
-    /* background-color: aqua; */
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
@@ -614,7 +639,6 @@ height: 116px;
 .containerCoffeShop .leftSection{
 width: 457px;
 height: 116px;
-/* background-color: antiquewhite; */
 display: flex;
 gap: 16px;
 flex-direction: column;
@@ -623,15 +647,12 @@ justify-content: center;
 }
 
 .containerCoffeShop .leftSection p{
-    /* background-color: #2A5B45; */
     width: 457px;
-    /* height: 32px; */
     font-size: 14px;
     line-height: 16px;
     margin: 0;
 }
 .containerHowToGetThere{
-    /* background-color: aqua;  */
 width: 118px;
 height: 24px;
 display: flex;
@@ -658,8 +679,8 @@ justify-content: center;
 /*-------Seccion de Contacto----------*/
 
 
-.contactUsandForm{
-height: 100%;
+#contactUsandForm{
+height:100%;
 height: 552px;
 background: #E3DED7;
 display: flex;
@@ -667,40 +688,34 @@ justify-content: center;
 margin: 0;
 padding: 0;
 
+
 }
 .containerinfoContactAndForm{
-    width: 1200px;
+width: 1200px;
 height: 552px;
 /* background-color: #2A5B45; */
 display: flex;
-justify-content: space-between;
 align-items: center;
-opacity: 90%;
+justify-content: space-between;
+justify-items: center;
+
+
 
 }
 .leftQuarterContactUs{
-width: 558px;
-height: 320px;
-/* background-color: rgb(8, 105, 190); */
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: center;
-color: #6B7280;
-gap: 24px;
+    width: 588px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color: #6B7280;
+    gap: 24px;
+    
 
 }
 
-#titleHeaderContact{
-width: 588px;
-height: 24px;
-font-size: 18px;
-line-height: 24px;
-font-weight: 600;
-color: #111827;
-margin: 0;
-display: flex;
-}
+
 
 
 
@@ -708,51 +723,74 @@ display: flex;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 588px;
+    height: 68px;
+    margin: 0;
 }
-.headerContactLeftQuarter p{
-font-size: 14px;
-width: 588px;
-height: 32px;
-line-height: 16px;
-margin: 0;
-padding: 0;
-/* background: #6B7280; */
 
+#titleHeaderContact{
+    width: 588px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+    display: flex;
+    }
+
+.headerContactLeftQuarter p{
+    width: 588px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .infoContactLeftQuarter{
 width: 588px;
-height: 24px;
+height: 220px;
 display: flex;
+flex-direction: column;
 margin: 0;
 padding: 0;
+gap: 24px;
+align-content: center;
+color: #6B7280;
 
 }
 
-.infoContactLeftQuarter p{
+#textInfoContact {
+    width: 588px;
+    height: 37px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     display: flex;
-    margin: 0;
-padding: 0;
-gap: 12px;
+   margin: 0;
+    gap: 12px;
 }
 
 .containerPhoneandMail{
     display: flex;
     flex-direction: column;
+    width: 588px;
+    height: 60px;
     gap: 12px;
+}
+.containerPhoneandMail p{
+    width: 552px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .addressContact{
-/* margin: 0;
-padding: 0; */
 display: flex;
 flex-direction: column;
-width: 100%;
-height: 16px;
-gap: 12px;
+width: 344px;
+height: 27px;
 }
 
 #firstAddress{
@@ -768,6 +806,8 @@ width: 588px;
 height: 60px;
 display: flex;
 flex-direction: column;
+
+gap: 12px;
 }
 
 #infoPhone{
@@ -782,10 +822,15 @@ flex-direction: column;
     gap: 12px;
 }
 
+#infoPhone p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
 
 #infoEmail{
     display: flex;
-
     width: 552px;
     height: 24px;
     font-size: 14px;
@@ -828,8 +873,6 @@ background-color: white;
 justify-items: center;
 box-sizing: border-box;
 margin: 0;
-/* border: 1px solid red; */
-
 }
 
 .boxFullNameUser{
@@ -840,7 +883,6 @@ min-height: 54px;
 gap: 4px;
 box-sizing: border-box;
 box-shadow: 0px 1px 2px 0px #0000000D;
-/* border: 1px solid blue; */
 }
 
 
@@ -855,9 +897,7 @@ box-shadow: 0px 1px 2px 0px #0000000D;
     display: flex;
 }
 
-form input{
-/* padding-left: 10px; */
-}
+
 
 form input:focus, #comments:focus, select:focus{
     border: 2px solid #2A5B45;
@@ -865,10 +905,8 @@ form input:focus, #comments:focus, select:focus{
 }
 
 form input:hover, #comments:hover, select:hover{
-    /* border: 1px solid #9B9EA3; */
     box-shadow: 0px 1px 2px 0px #0000000D;
     cursor: pointer;
-
 }
 
 
@@ -948,9 +986,7 @@ border: 0px;
 #phoneUserText{
     width: 402px;
     height: 28px;
-    /* border: 1px solid #D1D5DB; */
     border-left: none;
-
     padding-left: 10px;
     box-sizing: border-box;
 }
@@ -1033,7 +1069,6 @@ footer{
     width: 1200px;
     margin-top: 28.61px;
     height: 204px;
-    /* background-color: #bcb6bc; */
     gap: 16px;
     flex-direction: column;
 
@@ -1046,8 +1081,6 @@ display: flex;
 justify-content: space-between;
 width: 1132px;
 height: 152px;
-
-/* background-color: yellow; */
 position: relative;
 }
 
@@ -1138,7 +1171,6 @@ border-radius: 4px;
 #containerListFooter{
 width: 96px;
 height: 144px;
-/* top: 2.61px; */
 left: 577px;
 gap: 16px;
 margin: 0;
@@ -1171,7 +1203,6 @@ text-decoration: none;
 #privacyPolicy{
     display: flex;
     flex-direction: column;
-    /* padding-right: 150px; */
     position: absolute;
     left: 800px;
     width: 255.33px;
@@ -1199,7 +1230,6 @@ text-decoration: none;
 #copyrightFooter{
     width: 100%;
     height: 40px;
-    /* background-color: rgb(90, 90, 190); */
     display: flex;
     justify-content: center;
     align-items: center;
