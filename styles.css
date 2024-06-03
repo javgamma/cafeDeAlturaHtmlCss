@@ -19,7 +19,7 @@ position: fixed;
 z-index: 1000;
 }
 
-.containerLogo{
+#containerLogo{
     display: flex;
     align-items: center;
     width: 186px;
@@ -27,12 +27,12 @@ z-index: 1000;
     gap:7.33px
 }
 
-.containerLogo a{
+#containerLogo a{
 text-decoration: none;
 color: #FFFFFF;
 }
 
-.containerLogo:hover{
+#containerLogo:hover{
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ font-size: 23.46px;
 }
 
 
-.menuNav{
+#menuNav{
     display: flex;
     min-width: 512px;
     height: 32px;
@@ -71,7 +71,7 @@ font-size: 23.46px;
     cursor: pointer;
 }
 
-.contactAndLoginNav{
+#contactAndLoginNav{
     display: flex;
     min-width: 288px;
     height:40px;
@@ -79,7 +79,7 @@ font-size: 23.46px;
     align-items: center;
 }
 
-.contactNav{
+#contactNav{
     display: flex;
     align-items: center;
     min-width: 134px;
@@ -664,6 +664,11 @@ font-weight: 600;
 line-height: 16px;
 justify-content: center;
 }
+
+.containerHowToGetThere a:visited{
+    color: black;
+}
+
 .containerHowToGetThere img{
     width: 18px;
     height: 18px;
@@ -1233,5 +1238,6 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #2B2A2B;
+    ;
     }
